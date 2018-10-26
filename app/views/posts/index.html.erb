@@ -1,0 +1,9 @@
+<% @posts.each do |p| %>
+	<%= link_to p.title, p.link %>
+	<br>
+	<%= p.published_date %>
+	<br>
+	<%= "#{p.content[0..70]}..." %>
+	<br>
+<% end %>
+<br>
